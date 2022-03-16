@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #044040;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.diaAtual{
+    background-color: #D92525;
+    color: white;
+    padding: 5%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.diaAtual p{
+    font-size: 30px;
+}
+
+input[type='text']{
+    border: none;
+    background-color: #8C1F28;
+    border-radius: 10px;
+    padding: 2%;
+    width: 500px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+#bttLista:focus-visible{
+    outline: 2px solid white !important;
+}
+
+#adicionarLista{
+    height: 150px;
+    border: 2px solid #D92525;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    overflow: auto;
+}
+
+input[type='checkbox']{
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 3px;
+}
+
+input[type='checkbox']:checked{
+    pointer-events: none;
+}
+
+input[type='checkbox']:checked + label{
+    text-decoration: line-through;
+    color: #ffffff83;
+    pointer-events: none;
+}
+
+.buttonConfig{
+    margin-top: 10px;
+}
+
+.textInput{
+    margin-top: 30px;
+}
+
+input[type="button" i] {
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    color: -internal-light-dark(black, white);
+    padding: 1px 6px;
+    border:3px solid #D92525;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 1% 3%;
+}
+
+input[type='button']:nth-child(1){    
+    margin-right: 20px;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+@media screen and (max-width:768px){
+    input[type='text'] {
+        width: 377px;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    input[type='text'] {
+        width: 250px;
+    }
+}
